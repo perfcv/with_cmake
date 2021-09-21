@@ -1,0 +1,12 @@
+# 非必须
+workspace(name = "com_google_absl_hello_world")
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# Abseil
+http_archive(
+    name = "absl",
+    strip_prefix = "abseil-cpp-master",
+    urls = ["https://github.com/abseil/abseil-cpp/archive/master.zip"],
+)
+
